@@ -1,0 +1,23 @@
+---
+title: "Testing"
+output: html_document
+date: "2024-08-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Library
+```{r}
+library(ggplot2)
+data("diamonds")
+```
+
+# Draw a plot using diamonds dataset
+```{r}
+ggplot(diamonds, aes(x=carat, y=price)) +
+  geom_line()
+```
+
+
