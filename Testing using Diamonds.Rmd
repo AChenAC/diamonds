@@ -16,6 +16,7 @@ data("diamonds")
 
 # Draw a plot using diamonds dataset
 ```{r}
+print(paste("The following plot is generated", Sys.time()))
 ggplot(diamonds, aes(x=carat, y=price)) +
   geom_line()
 ```
